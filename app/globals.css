@@ -65,6 +65,36 @@ button:hover {
   transform: scale(1.05);
 }
 
+/* Galactic Theme: Floating Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  animation: rotate 12s linear infinite;
+}
+
 /* Custom Scrollbar for Modern UI */
 ::-webkit-scrollbar {
   width: 8px;
